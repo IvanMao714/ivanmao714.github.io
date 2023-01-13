@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ivanmao714.github.io/sitemap.xml
+Host: https://ivanmao714.github.io

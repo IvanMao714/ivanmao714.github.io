@@ -1,47 +1,314 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Mao's Blog | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://ivanmao714.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Jan 2023 11:50:04 GMT</lastBuildDate><item><title><![CDATA[Tag, 태그 게시물 예제]]></title><description><![CDATA[게시물에 태그를 지정할 수 있습니다. 해당 게시물의 Markdown YAML Front matter은 아래와 같습니다. 가이드의 Markdown YAML Front matter를 참고하세요. 자세한 가이드는 Documents를 확인해주세요.]]></description><link>https://ivanmao714.github.io/tag-post-example/</link><guid isPermaLink="false">https://ivanmao714.github.io/tag-post-example/</guid><pubDate>Sun, 24 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;게시물에 태그를 지정할 수 있습니다.&lt;/p&gt;
-&lt;p&gt;해당 게시물의 Markdown YAML Front matter은 아래와 같습니다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Mao's Blog | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://ivanmao714.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Jan 2023 12:01:38 GMT</lastBuildDate><item><title><![CDATA[Gatsby blog deploy to github]]></title><description><![CDATA[Documents (ENG) Install Basic Settings Writing posts Markdown YAML Front matter Deploy "Borderless", Gatsby Blog Starter(Theme) Static webs…]]></description><link>https://ivanmao714.github.io/Document-(Borderless,-en)/</link><guid isPermaLink="false">https://ivanmao714.github.io/Document-(Borderless,-en)/</guid><pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Documents (ENG)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#install&quot;&gt;Install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#basic-settings&quot;&gt;Basic Settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#writing-posts&quot;&gt;Writing posts&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#markdown-yaml-front-matter&quot;&gt;Markdown YAML Front matter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#deploy&quot;&gt;Deploy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;h2 id=&quot;borderless-gatsby-blog-startertheme&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#borderless-gatsby-blog-startertheme&quot; aria-label=&quot;borderless gatsby blog startertheme permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&quot;Borderless&quot;, Gatsby Blog Starter(Theme)&lt;/h2&gt;
+&lt;p&gt;Static websites created with Gatsby,&lt;br&gt;
+Borderless Blog Theme.&lt;/p&gt;
+&lt;p&gt;This document is based on the distribution to Github Pages.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Borderless DEMO WebSite&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple design with minimal color without border&lt;/li&gt;
+&lt;li&gt;Create Markdown Posts (Markdown + emoji, ktex)&lt;/li&gt;
+&lt;li&gt;Search Engine Optimization (SEO)&lt;/li&gt;
+&lt;li&gt;Support Reader Mode in posts such as Safari browser&lt;/li&gt;
+&lt;li&gt;Google Analytics support&lt;/li&gt;
+&lt;li&gt;Google Adsense support&lt;/li&gt;
+&lt;li&gt;Disqus comment function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;h2 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;There are two ways to get started with this blog.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use after the Repository Fork&lt;/li&gt;
+&lt;li&gt;Use after the Repository Clone&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;-important&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-important&quot; aria-label=&quot; important permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;! Important&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Don&apos;t work on master branch.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you go through the steps above, the branch you&apos;re working on is develop.&lt;br&gt;
+Start working on this develop branch. You can modify the develop branch or create a branch separately from the develop branch.&lt;/p&gt;
+&lt;p&gt;The master branch is used for deployment, and the built file is located.&lt;br&gt;
+You can work on the develop branch and deploy it using the deploy command.&lt;br&gt;
+The deploy command automatically deploys to the master branch, which does not have direct access.&lt;/p&gt;
+&lt;h3 id=&quot;1-use-after-the-repository-fork&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-use-after-the-repository-fork&quot; aria-label=&quot;1 use after the repository fork permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Use after the Repository &lt;strong&gt;Fork&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;After Fork the Repository,&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Setting &amp;gt; Option - Repository name&lt;/code&gt;&lt;br&gt;
+Rename the Repository to &quot;&lt;strong&gt;username&lt;/strong&gt;.github.io&quot;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Setting &amp;gt; Branches - Default branch&lt;/code&gt;&lt;br&gt;
+Change the default branch. Select &lt;strong&gt;develop&lt;/strong&gt; and press the Update button to proceed.&lt;/li&gt;
+&lt;li&gt;clone your Repository.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm i&lt;/code&gt; install packages&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm start&lt;/code&gt; Start local development environment
+Check URL &quot;localhost:8000&quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-use-after-the-repository-clone&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-use-after-the-repository-clone&quot; aria-label=&quot;2 use after the repository clone permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Use after the Repository &lt;strong&gt;Clone&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone -b develop --single-branch https://github.com/junhobaik/junhobaik.github.io.git &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;SITE_DIRECTORY&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This procedure clones the repository based on the develop branch.&lt;br&gt;
+Then install the required packages.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Start local development environment&lt;br&gt;
+Check URL &quot;localhost:8000&quot;&lt;/p&gt;
+&lt;br/&gt;
+&lt;h2 id=&quot;basic-settings&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#basic-settings&quot; aria-label=&quot;basic settings permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Basic Settings&lt;/h2&gt;
+&lt;p&gt;Modify the default settings for you.&lt;/p&gt;
+&lt;h3 id=&quot;modify-code-classlanguage-text_configjscode&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#modify-code-classlanguage-text_configjscode&quot; aria-label=&quot;modify code classlanguage text_configjscode permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Modify &lt;code class=&quot;language-text&quot;&gt;./_config.js&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;_config.js&lt;/code&gt; example&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/** Site MetaData (Required all)*/&lt;/span&gt;
+  title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Dev.White&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  description&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Junho Baik&apos;s Development Blog&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  author&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Junho Baik&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  language&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;en&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  siteUrl&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://junhobaik.github.io&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Header */&lt;/span&gt;
+  profileImageFileName&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;profile.png&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Home &gt; Bio information*/&lt;/span&gt;
+  comment&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Jr. Web Front-end Developer. / javascript, react ...&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Junho Baik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  company&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  location&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Korea&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  email&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;junhobaik@gmail.com&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  website&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://junhobaik.github.io&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  linkedin&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  facebook&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  instagram&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://www.instagram.com/junhobaik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  github&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://github.com/junhobaik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Post */&lt;/span&gt;
+  enablePostOfContents&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  disqusShortname&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;junhobaik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  enableSocialShare&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Optional */&lt;/span&gt;
+  googleAnalytics&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;UA-123123123-0&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  googleAdsenseClient&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ca-pub-5001380215831339&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  googleAdsenseSlot&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;5214956675&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;설정&lt;/th&gt;
+&lt;th&gt;타입&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;(required) String&lt;/td&gt;
+&lt;td&gt;Title of the site. Title text in the header. Enter the title of each webpage.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;description&lt;/td&gt;
+&lt;td&gt;(required) String&lt;/td&gt;
+&lt;td&gt;Description of the site&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;author&lt;/td&gt;
+&lt;td&gt;(required) String&lt;/td&gt;
+&lt;td&gt;Author of the site&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;language&lt;/td&gt;
+&lt;td&gt;(required) String&lt;/td&gt;
+&lt;td&gt;Site default language. &apos;en&apos; for English, &apos;en-US&apos; is also possible by adding country code.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;siteUrl&lt;/td&gt;
+&lt;td&gt;(required) String&lt;/td&gt;
+&lt;td&gt;Enter the address of your website. If the address is not present at deployment time, many errors can occur.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;profileImageFileName&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;Locate your profile picture in the path &lt;code class=&quot;language-text&quot;&gt;./src/images&lt;/code&gt; and enter the filename of the image. It enters the image next to the title of the header. If there is no input, it shows a random image.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;comment, name, company, location, email, website&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;This is the personal information shown on the left side of the Home (index) page. If not entered, the item is not output and all values are entered as strings.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;linkedin, facebook, instagram, github&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;These are the social icon links that will appear under Personal Information on the left side of the Home (index) page. Clicking on the icon will take you to that link. Please enter full link, not ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;enablePostOfContents&lt;/td&gt;
+&lt;td&gt;(required) Boolean (true, false)&lt;/td&gt;
+&lt;td&gt;Set whether the table of contents appears in the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;disqusShortname&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;You can activate the comment function. After creating a site in disqus, enter the shortname of the site here. Emptying the value disables the comment feature.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;enableSocialShare&lt;/td&gt;
+&lt;td&gt;(required) Boolean (true, false)&lt;/td&gt;
+&lt;td&gt;Set whether to display post social sharing icons at the bottom of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;googleAnalytics&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;You can activate Google Analytics. Enter your TrackingID.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;googleSearchConsole&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;content value in HTML tag of google search console ownership verification, ex.&apos;w-K42k14_I4ApiQKuVPbCRVV-GxlrqWxYoqO04KDbKo&apos;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;googleAdsenseClient&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;Client input of Google AdSense when activating GoogleAdsense. In addition, change the number corresponding to Client in &lt;code class=&quot;language-text&quot;&gt;./static/ads.txt&lt;/code&gt; to the number of your client.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;googleAdsenseSlot&lt;/td&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;Enter Google AdSense Slot when activating GoogleAdsense.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;String (String) values are not required to be empty &apos;&apos;&lt;/p&gt;
+&lt;p&gt;Disqus Comments, Google Analytics, and Google Adsense features are disabled during local development. After deployment, you can use these features.&lt;/p&gt;
+&lt;br/&gt;
+&lt;h2 id=&quot;writing-posts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#writing-posts&quot; aria-label=&quot;writing posts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Writing posts&lt;/h2&gt;
+&lt;p&gt;Posts are written in Markdown.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown&lt;/li&gt;
+&lt;li&gt;emoji support&lt;/li&gt;
+&lt;li&gt;ktex support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your post will be located in the &lt;code class=&quot;language-text&quot;&gt;./_posts&lt;/code&gt; folder.&lt;br&gt;
+Your draft post will be located in the &lt;code class=&quot;language-text&quot;&gt;./_drafts&lt;/code&gt; folder. (Draft posts are visible during local development, but not on the distributed web)&lt;br&gt;
+The &lt;code class=&quot;language-text&quot;&gt;_posts&lt;/code&gt; folder and the&lt;code class=&quot;language-text&quot;&gt;_drafts&lt;/code&gt; folder must exist. ** Do not delete both folders **&lt;/p&gt;
+&lt;p&gt;The title of the file becomes the address of the post post.
+If a date is entered, such as in Jekyll&apos;s post file title format, the date is excluded from the address.&lt;/p&gt;
+&lt;p&gt;ex 1. &lt;code class=&quot;language-text&quot;&gt;./_posts/first-post.md&lt;/code&gt;&lt;br&gt;
+address: &lt;a href=&quot;https://junhobaik.github.io/first-post&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://junhobaik.github.io/first-post&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;./_posts/2019-12-31-first-post.md&lt;/code&gt;&lt;br&gt;
+address: &lt;a href=&quot;https://junhobaik.github.io/first-post&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://junhobaik.github.io/first-post&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Create post with image&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When embedding an image inside the markdown, the structure is as follows&lt;/p&gt;
+&lt;p&gt;Example of creating a post that will have an address of &lt;code class=&quot;language-text&quot;&gt;/first-post&lt;/code&gt;
+After creating &lt;code class=&quot;language-text&quot;&gt;./_posts/first-post&lt;/code&gt; folder,&lt;br&gt;
+Markdown files have the title &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt;,&lt;br&gt;
+Place image files in that folder.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  _posts/
+    first-post/
+      index.md
+      image-file-1.png
+      image-file-2.jpg
+      ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;series-posts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#series-posts&quot; aria-label=&quot;series posts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Series Posts&lt;/h3&gt;
+&lt;p&gt;When you write several posts on one subject as below, you can use the series function to indicate that the post is included in the series.
+With the series feature, you&apos;ll see a list of series posts at the top of the post.&lt;/p&gt;
+&lt;p&gt;-Create a blog, install
+-Create a blog, setting up
+-Create a blog, Distribution&lt;/p&gt;
+&lt;p&gt;If you write a post like this, write the file name as below.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;development-blog_1.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;development-blog_2.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;development-blog_3.md&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The number after the underbar(_) is the number of the series.&lt;br&gt;
+The file name before the underbar(_) must be the same.&lt;br&gt;
+There must be only one underbar(_) in the file name.&lt;br&gt;
+Do not mix numbers and letters after the underbar(_).&lt;/p&gt;
+&lt;h3 id=&quot;markdown-yaml-front-matter&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#markdown-yaml-front-matter&quot; aria-label=&quot;markdown yaml front matter permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markdown YAML Front matter&lt;/h3&gt;
+&lt;p&gt;At the top of a Markdown post, enter the information for that post.
+Enter the information in two &lt;code class=&quot;language-text&quot;&gt;---&lt;/code&gt; s as shown below.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---
-title: Tag, 태그 게시물 예제
-date: 2019-07-30
+title: title here...
+date: 2018-01-01
 tags:
-  - tag
-  - 태그
----&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;가이드의 Markdown YAML Front matter를 참고하세요.&lt;/p&gt;
-&lt;p&gt;자세한 가이드는 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Image, 이미지 게시물 예제]]></title><description><![CDATA[이미지 파일이 첨부된 게시물의 예제입니다. 폴더를 만들고 폴더의 제목이 해당 게시물의 주소가 됩니다. 게시물 파일명은 index.md 로 합니다. 이미지 파일은 폴더 내에 위치시킵니다. 자세한 가이드는 Documents를 확인해주세요.]]></description><link>https://ivanmao714.github.io/image-post-example.md/</link><guid isPermaLink="false">https://ivanmao714.github.io/image-post-example.md/</guid><pubDate>Sun, 24 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/c0566/screenshot.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB00lEQVQ4y52SW2sUMRiG1+qN3uwhx0nmkMOeatei9G8I/igPoAi6IuKVf05hL6wj88lQaNHxzW531SKWNfDwJZnkmTchvR7aiXe3HxxX3ATLjDbMmA0WZFnGQggsxsi01uv5NHcFjvk7vW1bWPt4cWjPZKk/SiFXUv5CcL4qy3LlqmrF0VdKXeUT+Ia1z3dCIfgbrWWnpGiUlC0WtPI30lhp3WJTK4RsGeMt5FtICNExxt7vhEqJ16Gquli5L7MQmqM4bu77RGwWGN8bx2bufFNWFTAN1jeciwaiRA2+Q/huJ5R5viwWR115fFLLOCVtDAWmKI40WS6oshk5KckYVC8ozwVdJoOYf0X98YcwM2Y5mR12k/mins7vEpJQVhSUo5bOky1KMhhjHY1GnHDkJEvSvwsxsayc65xztfcBKQLF8YR8jOh7KpIsM2vJln8mNNYsy+msG/pYMyRK6SbC0hTkSpMvcAVa46iWwlhSXlwjlJwvM607JmXNcVcCSKRQfJNGbpEbrk04YuwVPnR4c59R6z05hfACwrc7YXpDeGMdPpynv+3JRdoLx4edsN/vPxwMBi9Rn6A+2wfseYr6AvXRWjYcDm9ceg/ALXDzPzjYun4C4yPqy09MVMcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot&quot;
-        title=&quot;screenshot&quot;
-        src=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/fcda8/screenshot.png&quot;
-        srcset=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/12f09/screenshot.png 148w,
-/static/483b2386e38636bd5d9e7357b4c6796b/e4a3f/screenshot.png 295w,
-/static/483b2386e38636bd5d9e7357b4c6796b/fcda8/screenshot.png 590w,
-/static/483b2386e38636bd5d9e7357b4c6796b/efc66/screenshot.png 885w,
-/static/483b2386e38636bd5d9e7357b4c6796b/c83ae/screenshot.png 1180w,
-/static/483b2386e38636bd5d9e7357b4c6796b/c0566/screenshot.png 1544w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;이미지 파일이 첨부된 게시물의 예제입니다.&lt;/p&gt;
-&lt;p&gt;폴더를 만들고 폴더의 제목이 해당 게시물의 주소가 됩니다.&lt;/p&gt;
-&lt;p&gt;게시물 파일명은 index.md 로 합니다.&lt;/p&gt;
-&lt;p&gt;이미지 파일은 폴더 내에 위치시킵니다.&lt;/p&gt;
-&lt;p&gt;자세한 가이드는 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item></channel></rss>
+  - javascript
+  - ES6
+keywords:
+  - keyword1
+  - keyword2
+---
+
+contents here...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Variable&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;title&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;(required)&lt;/strong&gt; Enter the title of the post. If special characters are included, enclose them in &lt;code class=&quot;language-text&quot;&gt;&amp;quot; &amp;quot;&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;date&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;(required)&lt;/strong&gt; Enter the creation date of this post&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;tags&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;(optional)&lt;/strong&gt; Enter tag for post&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;keywords&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;(optional)&lt;/strong&gt; SEO meta keywords&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;+ All values are not enclosed in &lt;code class=&quot;language-text&quot;&gt;&amp;#39;&amp;#39;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;data-examples&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data-examples&quot; aria-label=&quot;data examples permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;data Examples&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# date Examples
+
+## Case 1
+date: 2018-09-01
+
+## Case 2
+date: 2018-09-01 22:00:00
+
+## &amp;#39;Time zone&amp;#39; Not Support
+## There is no error but ignores the time zone
+date: 2018-09-01 20:00:00 +0900&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;tags--keywords-examples&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tags--keywords-examples&quot; aria-label=&quot;tags  keywords examples permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;tags &amp;#x26; keywords Examples&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# tags &amp;amp; keywords Examples
+
+## Case 1
+tags: onlyOneTag
+
+## Case 2
+tags: [tag1, tag2]
+
+## Case 3
+tags:
+  - tag1
+  - tag2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;h2 id=&quot;deploy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#deploy&quot; aria-label=&quot;deploy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deploy&lt;/h2&gt;
+&lt;p&gt;Checklist before deploying&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure your Github repository is named username.github.io.&lt;/li&gt;
+&lt;li&gt;Make sure you have written siteUrl correctly in &lt;code class=&quot;language-text&quot;&gt;./_config.js&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Make sure the branch you are working with is not the master branch. (Please refer to the Install section for the relevant instructions)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The deployment starts with the above command.
+The commit is automatically made to the master branch.
+It takes several tens of seconds, sometimes up to a few minutes, to be reflected.&lt;/p&gt;
+&lt;p&gt;You can now enter and verify your address.&lt;/p&gt;</content:encoded></item></channel></rss>

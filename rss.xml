@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Mao's Blog | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://ivanmao714.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Jan 2023 12:01:38 GMT</lastBuildDate><item><title><![CDATA[Gatsby blog deploy to github]]></title><description><![CDATA[Documents (ENG) Install Basic Settings Writing posts Markdown YAML Front matter Deploy "Borderless", Gatsby Blog Starter(Theme) Static webs…]]></description><link>https://ivanmao714.github.io/Document-(Borderless,-en)/</link><guid isPermaLink="false">https://ivanmao714.github.io/Document-(Borderless,-en)/</guid><pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Documents (ENG)&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Mao's Blog | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://ivanmao714.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Jan 2023 12:36:53 GMT</lastBuildDate><item><title><![CDATA[Linux端口号被占用]]></title><description><![CDATA[先查询占用端口号进程  删除进程 再回看8080是否还有进程]]></description><link>https://ivanmao714.github.io/linux_port/</link><guid isPermaLink="false">https://ivanmao714.github.io/linux_port/</guid><pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;先查询占用端口号进程&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;netstat -apn | grep 8080&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e724d9eb7a9df053039fedac14c33b5d/82b28/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAA8ElEQVQY002QwU7CQBRF+wcaEeikFSqlpdgK7dgpU6BAodiJilEXLNz5/x9xeTML4uLmZXLzzjsZK32pEKclirzCUmywWDUQcg+5bpDR259kiBOBgKbthOizMe77I3R6j/DGMyRzieEoAXMnJpYuRVnDcUPwfIP2/Rs2Fe3bD/bHD7DhFK+pRDCIUG4V1jtF4AB3XQ9+mJrDQtbIKVrAYgQKIo6bzgBZsYMiIHMjnH//cGg/4RDoxJfG8qC+0FA4LT54Twaqhbq2f42lr2ngLQF5sUVFBrqY8RXCKQejRUXfEfuJMayPJ8TPiytIz/+5ALBLefvWDKm8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/e724d9eb7a9df053039fedac14c33b5d/fcda8/1.png&quot;
+        srcset=&quot;/static/e724d9eb7a9df053039fedac14c33b5d/12f09/1.png 148w,
+/static/e724d9eb7a9df053039fedac14c33b5d/e4a3f/1.png 295w,
+/static/e724d9eb7a9df053039fedac14c33b5d/fcda8/1.png 590w,
+/static/e724d9eb7a9df053039fedac14c33b5d/efc66/1.png 885w,
+/static/e724d9eb7a9df053039fedac14c33b5d/82b28/1.png 931w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;删除进程&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;kill -9 pid&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;再回看8080是否还有进程&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;netstat -apn | grep 8080&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Gatsby blog deploy to github]]></title><description><![CDATA[Documents (ENG) Install Basic Settings Writing posts Markdown YAML Front matter Deploy "Borderless", Gatsby Blog Starter(Theme) Static webs…]]></description><link>https://ivanmao714.github.io/Document-(Borderless,-en)/</link><guid isPermaLink="false">https://ivanmao714.github.io/Document-(Borderless,-en)/</guid><pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Documents (ENG)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#install&quot;&gt;Install&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#basic-settings&quot;&gt;Basic Settings&lt;/a&gt;&lt;/li&gt;

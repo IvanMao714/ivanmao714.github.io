@@ -1,4 +1,114 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Mao's Blog | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://ivanmao714.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Jan 2023 14:37:51 GMT</lastBuildDate><item><title><![CDATA[Linux端口号被占用]]></title><description><![CDATA[先查询占用端口号进程  删除进程 再回看8080是否还有进程]]></description><link>https://ivanmao714.github.io/linux_port/</link><guid isPermaLink="false">https://ivanmao714.github.io/linux_port/</guid><pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;先查询占用端口号进程&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Mao's Blog | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://ivanmao714.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Jan 2023 14:46:38 GMT</lastBuildDate><item><title><![CDATA[配置Hyper-v]]></title><description><![CDATA[安装虚拟机 VMware Workstation Pro16 或 Docker 的时候，发现找不到hyper-v功能选项。window11家庭版发现无法找到hyper-v功能选项，其实这是window自动隐藏该功能，下面讲一下怎么开启hyper-v。 打开控制面板 首先打开控制…]]></description><link>https://ivanmao714.github.io/配置Hyper-v/</link><guid isPermaLink="false">https://ivanmao714.github.io/配置Hyper-v/</guid><pubDate>Sat, 14 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;安装虚拟机 VMware Workstation Pro16 或 Docker 的时候，发现找不到hyper-v功能选项。window11家庭版发现无法找到hyper-v功能选项，其实这是window自动隐藏该功能，下面讲一下怎么开启hyper-v。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;打开控制面板&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E6%89%93%E5%BC%80%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF&quot; aria-label=&quot;打开控制面板 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;打开控制面板&lt;/h2&gt;
+&lt;p&gt;首先打开控制面板，选择： 程序&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/16bf0daa35574cb3d583705eeec53bc4/f2793/1.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 46.621621621621614%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABbklEQVQoz21SyU7DMBDNN/MNHBAnPgRxQUhwACGBVBCVyk63dMleZ4+TJrXjPNx0UdN2pLFm7Dczb2ashOEcUyOGbmcwZ3Mspaqqra58HBUhKnh+gIjmCLKyvlOGwQJ9PweJHeiBg4KzZlS1KqBmFElO4VKCUpTbwvuiXKsxLr41/OoRXkY+vo1MBnF4lMmqvAalJcdpt42+a2BCIhBarlnvdrGyleWRMY6+E2E4SzDxKPyUIS2E1BUTUjCcPX9Cc23YMYEVNVnujke57Ok4f+1iSmZQiYup723BG5nzEledMTT5ZkYmvDSoGe4nqxN+TAa47bTwZ9loT8ay3bxRubaFwM3bD9ojHT3HxNiNYYUcORMHs1Qsw8TD/SNaaop3jSLM2BYk1kAjYTi5c/CkEnzppkyWw4kYaH64HKWQ7ST5AiPXQ5DyBmgDnEsmbbksTy6DxGWNYVyAi+ow4cD00Rlqcinu0RYOv0bT33//B/zztBmaqTgpAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;1&quot; title=&quot;1&quot; src=&quot;/static/16bf0daa35574cb3d583705eeec53bc4/fcda8/1.png&quot; srcset=&quot;/static/16bf0daa35574cb3d583705eeec53bc4/12f09/1.png 148w,
+/static/16bf0daa35574cb3d583705eeec53bc4/e4a3f/1.png 295w,
+/static/16bf0daa35574cb3d583705eeec53bc4/fcda8/1.png 590w,
+/static/16bf0daa35574cb3d583705eeec53bc4/f2793/1.png 743w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;选择： 启用或关闭Windows功能&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 518px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/54d19cb9aa975ef2bdf206887810b01e/6b9fd/2.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 27.027027027027025%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA60lEQVQY03WOW0/CQBCF+/9/hW8++miMlwQDJAa8iw0WCykFrFha7HXdZT+3pQ82xElOTmZn5ttjlXJH53XBjRtyfBtw+RZxYducjracj3O6bkFnUnD9XjDwSnqmP3lKOLMzrpwcJ1T43+BtNZ5xSyhNImC2Udz7KXfzhOeVYPypcNYSO/ih7+Y1rNp58AX9acHjUvCR6lpBitHeLTQc9YYMpi8mpUN3MmIRZUSZYpNKSmkW/qlqonUl3XgFNOV+zfGjNavY/BhLvFAYqGAZC5JS1ce7+qitBvkHb4D7Aa3HgyTNjj6AttNV+gWeJX2rQa7hZgAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;2&quot; title=&quot;2&quot; src=&quot;/static/54d19cb9aa975ef2bdf206887810b01e/6b9fd/2.png&quot; srcset=&quot;/static/54d19cb9aa975ef2bdf206887810b01e/12f09/2.png 148w,
+/static/54d19cb9aa975ef2bdf206887810b01e/e4a3f/2.png 295w,
+/static/54d19cb9aa975ef2bdf206887810b01e/6b9fd/2.png 518w&quot; sizes=&quot;(max-width: 518px) 100vw, 518px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;点击Hyper-V进行关闭或打开&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 423px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/c6d3bff14651c288d61931cb7e69fb9e/f687d/3.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 101.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADm0lEQVQ4y31Ua3PaRhTV//8D/QH91plOPWlCktohmbbYxgbHPCSEEHpLuxJ6AUJyeOT07mKIM5lmZy4XSaujc+85e5XE+wW2eoEy41hXNZbLJcUKzdMTmqb5FnT99CLEPZGrqpJ5U9eo6waK63WxSCvstrSprlBvjnFcX5+Dfr8esN8fcDgcY7fbySzAdvs9sN/Spj0UzjnGBkdvHOJxEkGbxZiYHOqMwXQSGfdDH0laYEMfWq1WMtbrtaxmvSYyTYVbp0DXSqFEEcPdwwTdz1MMNAdDdY6ZFWKsOxiMTai6jfvHGTgncNOE63nwfR+O40CQsSwLrm2hS3t1fwHFcx18av+FD1eXuLm5Rqv1J7q3N3jbeo3W61e4uPgD7faVfPbPvx1oEw0zw0Cv15e50+mgc32D/t0tspQAwzDA3CJm4xFGwwGGoxGmtHE0GkOf6PJaMNM0DWmWyVKLopDllmUpr4UwS2pDnudQ4siHEVb4vd3Cl0UflheDRQGV5MJzXSQx9XQygapNYNs2XLqv6xNZctM8kVB7GZvNBowxKCxwMYs2+O3qDZq4h7nDwFmEMIwQx1wGY8fgFGEU0QcZAdTP6h9dIGzkUX+VbBHDYhXa129RxX2Ycw+LRYLtdiutIbJgsKP8s1WTDyUg54wMvUUTtbFkfdhOiMBzZElz04JlzuF7vhRAMIupBaJXm+poIVHqd4CLJEb1BdDVS6zYPWyXEYAjreH7AULKnMdYkQgCSNd1GDODymcEQP5MkjOgSz1XYk4vlcCv799gFXbheJzYWfJr4iXD0EkMBxkp/LMlehgEARTHd1FUB2jjSxRBF64fk5IWZsRiMBhAVVUq3US/15N2CoJQCnE6gidRRK8FW8UTbOIK9/13KInh3PYRkZKWNZd2GQyHuLvrkm00OGQbofJJ3VN8BxiSbdLVHr2H96h4j1T2qURLnogsz5CmqRQifVHyCeTl/zOgUJmGCNb+B6zjz9Q7RqU+Ykyl/t96ye4HQEYlHOjeOvhItnmAZYckii1FEacky3LKCQJSPEszecRwHmrf1hkw4SEsvsG7v1+h9K+h0XQRgC75cEoWmU4NmIYJRtaRg7Z+PiFClOdjJ5aYi6I1smSWZJhRw9P46LnjkYvPIRgW5MG8WCIpK6jGHB6n3uZiNi7lCEsFe/KqIhQtixxLmhxZXtIkyaWBfwgSJV6kCBYlbvoDmD5HlJb0XiEnkSAips9/wbbQorFzrakAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;3&quot; title=&quot;3&quot; src=&quot;/static/c6d3bff14651c288d61931cb7e69fb9e/f687d/3.png&quot; srcset=&quot;/static/c6d3bff14651c288d61931cb7e69fb9e/12f09/3.png 148w,
+/static/c6d3bff14651c288d61931cb7e69fb9e/e4a3f/3.png 295w,
+/static/c6d3bff14651c288d61931cb7e69fb9e/f687d/3.png 423w&quot; sizes=&quot;(max-width: 423px) 100vw, 423px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;h2 id=&quot;如果没有发现hyper-v，解决办法如下&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%8F%91%E7%8E%B0hyper-v%EF%BC%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%E5%A6%82%E4%B8%8B&quot; aria-label=&quot;如果没有发现hyper v，解决办法如下 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;如果没有发现Hyper-V，解决办法如下&lt;/h2&gt;
+&lt;p&gt;在Win11搜索框，PowerShell 输入 systeminfo 命令&lt;/p&gt;
+&lt;p&gt;能够看到出现了很多处理器的信息，最末尾有个 Hyper-V 要求，如果四个全为 “是”，则表示支持 Hyper-V 功能&lt;/p&gt;
+&lt;p&gt;桌面新建一个记事本文件，将它的后缀改成cmd或bat，复制下面的代码&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pushd &amp;quot;%~dp0&amp;quot;
+ 
+dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt
+ 
+for /f %%i in (&amp;#39;findstr /i . hyper-v.txt 2^&amp;gt;nul&amp;#39;) do dism /online /norestart /add-package:&amp;quot;%SystemRoot%\servicing\Packages\%%i&amp;quot;
+ 
+del hyper-v.txt
+
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然后，右键选择：以管理员身份运行。代码执行结束后，重启电脑就可以了。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[安装docker至E盘]]></title><description><![CDATA[创建软链接 解除软链接  安装Docker]]></description><link>https://ivanmao714.github.io/安装docker至E盘/</link><guid isPermaLink="false">https://ivanmao714.github.io/安装docker至E盘/</guid><pubDate>Sat, 14 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;创建软链接&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E5%88%9B%E5%BB%BA%E8%BD%AF%E9%93%BE%E6%8E%A5&quot; aria-label=&quot;创建软链接 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;创建软链接&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mklink /j &amp;quot;C:\Program Files\Docker&amp;quot; &amp;quot;E:&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;解除软链接&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rmdir &amp;quot;C:\Program Files\Docker&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 483px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d1a65e67598d5b9520aea30854176b1c/77a9e/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAmUlEQVQY022OwQqFIBBFXWtJRmBmmSYU1D5o4f9/1n3MQBHxFodB753DiHmeMU0TxnF8ZggBwzCgbVt0XQfvPf+9uyklZlkW7lC/aRoIKq/rim3beOacse87vwkSUJmWY4wsPY4DpRRc14XzPFlE1HUNYa0FcV9hjIFSClVVQWvNSCkfKPvHnQnnHF/Q9z1Dwu8iyd98Ze/sBwg9ZSDI1sfAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img 1&quot;
+        title=&quot;img 1&quot;
+        src=&quot;/static/d1a65e67598d5b9520aea30854176b1c/77a9e/1.png&quot;
+        srcset=&quot;/static/d1a65e67598d5b9520aea30854176b1c/12f09/1.png 148w,
+/static/d1a65e67598d5b9520aea30854176b1c/e4a3f/1.png 295w,
+/static/d1a65e67598d5b9520aea30854176b1c/77a9e/1.png 483w&quot;
+        sizes=&quot;(max-width: 483px) 100vw, 483px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装docker&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E5%AE%89%E8%A3%85docker&quot; aria-label=&quot;安装docker permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;安装Docker&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fb5375b513b97a6e2b124a4a159b77d8/78612/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABRklEQVQoz5WQ2UrDQBSG5229aBHBiuKjCIIorYp47YVPIV7U0j0p3bJMJsssmervJK21bZqiFx9n5sw5X35Czp8s1B4tnNy0UL0boFIf4fS2jcp1C0dXTcNHgctGB8f1Ic6ep6jdD3Hx0EelMULVQAadDpjnIuUxoCWAheFzxdfGeZdsTq/qL6TdtTCZuZjNKQKWgAsFzpckJeQzOySrSix7gsnUNVIvF6YqhZRqL9q86QPvGWTQt2DbYziOjyiKoQoLy7syOJGCG0nz0Y2+md+EZCLfZ/C8AHHMt4Trs6kLrfHSDfHaDcyv0hB7ZLkwk1Ea5tIoSgoJf+7z2RxDa2SwwViINNX7E2bJ/iLkXEAYOOcQQq77RaFLQf0AvkcLwrKlQ33iMwEaSvhMIk5UacJdShM6vXd4VhNO7w2hO4ZKF1tL/+UbG/JCjSJ2KWsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img 2&quot;
+        title=&quot;img 2&quot;
+        src=&quot;/static/fb5375b513b97a6e2b124a4a159b77d8/fcda8/2.png&quot;
+        srcset=&quot;/static/fb5375b513b97a6e2b124a4a159b77d8/12f09/2.png 148w,
+/static/fb5375b513b97a6e2b124a4a159b77d8/e4a3f/2.png 295w,
+/static/fb5375b513b97a6e2b124a4a159b77d8/fcda8/2.png 590w,
+/static/fb5375b513b97a6e2b124a4a159b77d8/efc66/2.png 885w,
+/static/fb5375b513b97a6e2b124a4a159b77d8/c83ae/2.png 1180w,
+/static/fb5375b513b97a6e2b124a4a159b77d8/78612/2.png 1260w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Linux端口号被占用]]></title><description><![CDATA[先查询占用端口号进程  删除进程 再回看8080是否还有进程]]></description><link>https://ivanmao714.github.io/linux_port/</link><guid isPermaLink="false">https://ivanmao714.github.io/linux_port/</guid><pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;先查询占用端口号进程&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;netstat -apn | grep 8080&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;

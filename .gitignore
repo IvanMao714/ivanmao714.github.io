@@ -42,19 +42,19 @@ app.*.map.json
 /android/app/release
 
 # dont commit source code
-android/
-fonts/
-ios/
-lib/
-linux/
-macos/
-test/
-web/
-windows/
-.metadata
-analysis_options.yaml
-data.json
-devtools_options.yaml
-personal_website.iml
-pubspec.lock
-pubspec.yaml
+# android/
+# fonts/
+# ios/
+# lib/
+# linux/
+# macos/
+# test/
+# web/
+# windows/
+# .metadata
+# analysis_options.yaml
+# data.json
+# devtools_options.yaml
+# personal_website.iml
+# pubspec.lock
+# pubspec.yaml

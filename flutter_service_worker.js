@@ -41,7 +41,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "23963fb3d3089936d1950f2204374127
 "assets/data.json": "bc5a97f34d0314fabd35be6b30ae2dc4",
 "assets/FontManifest.json": "eb13a0d169d41e78994c5d6eb9075409",
 "assets/fonts/agustina/agustina.otf": "7b9833076716a8d14eec0cf885a3153c",
-"assets/fonts/MaterialIcons-Regular.otf": "efc0ca1a2592af902bff492757feb35b",
+"assets/fonts/MaterialIcons-Regular.otf": "a62e841c5bb2fa16b862bc54163267ef",
 "assets/fonts/montserrat/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/fonts/poppins/Poppins-Bold.ttf": "a3e0b5f427803a187c1b62c5919196aa",
 "assets/fonts/poppins/Poppins-Italic.ttf": "5e956c44060a7b3c0e39819ae390ab15",
@@ -92,9 +92,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "23963fb3d3089936d1950f2204374127
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "5034e2dc65ecb2ba564922d1356ed75d",
-"/": "5034e2dc65ecb2ba564922d1356ed75d",
-"main.dart.js": "7369dd9f5f1ae64f9eaf1f703d1bcf32",
+"index.html": "137406030faed4939a57da60a883ad10",
+"/": "137406030faed4939a57da60a883ad10",
+"main.dart.js": "0e7b9aad96c856caa78462202be53b14",
 "manifest.json": "d899e58ba79eeb01d040664e45f04ea5",
 "version.json": "03acefc4795e8573b194262cd3a4419f"};
 // The application shell files that are downloaded before a service worker can

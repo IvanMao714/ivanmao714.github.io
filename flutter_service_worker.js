@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "23963fb3d3089936d1950f2204374127",
-"assets/AssetManifest.bin.json": "4fb688fe22f0edfb25f0d87d24954307",
-"assets/AssetManifest.json": "df3294fc4bda5bfbfd364892887d65b1",
+const RESOURCES = {"assets/AssetManifest.bin": "a57a3130cfb3ebff08d3096635ad8daf",
+"assets/AssetManifest.bin.json": "a3c12134cc7ead8cff5bfe7a14ecdd02",
+"assets/AssetManifest.json": "cdd44c877198ba129126ceaed94ec371",
 "assets/assets/hi.gif": "cad5918d86b6a7e83f1fb4acead70e4c",
 "assets/assets/photos/black-white.png": "76ca9c4a691f5c4c34565c5ab807d51d",
 "assets/assets/photos/colored.png": "0bf08982c57c48cd24abe07988e6fb5c",
@@ -17,9 +17,15 @@ const RESOURCES = {"assets/AssetManifest.bin": "23963fb3d3089936d1950f2204374127
 "assets/assets/projects/hereiam.png": "cbb5a77a5e19e1224080dcaf0e3b5407",
 "assets/assets/projects/hereiamB.png": "16ee68a57fbf0eae5c50e1b8376064df",
 "assets/assets/projects/java.png": "62be9fb6e1d7166e9cbeeed913096752",
+"assets/assets/projects/mathtranslate.png": "432336dd28ac6da4c8cbeadb333da3f4",
+"assets/assets/projects/mathtranslate.psd": "b6d24b8fbd2ebf4dc1009f0f38bc06aa",
+"assets/assets/projects/mathtranslate_logo.png": "e63a53689bf074be7e0b21d1b454e934",
 "assets/assets/projects/medkit.png": "915431d4f438d5bc7c642fed8dbfb419",
 "assets/assets/projects/medkitB.png": "058d00d54c3ee8a953442d0cf3bfb866",
 "assets/assets/projects/messenger.png": "f28ead750653b586737ed63db6f2d53a",
+"assets/assets/projects/plot.psd": "b0cde12c54f778e6af45cc1fa40a68bb",
+"assets/assets/projects/plotacademicblock.png": "f2de2824845bb46d597e47c6cfd5cbdf",
+"assets/assets/projects/plotacademicblock_logo.png": "7d3767538c9b040d9f7d3548ea024fcc",
 "assets/assets/projects/quran.png": "55e8a0c928bc192f682ca0e61cb61ce3",
 "assets/assets/projects/quranB.png": "3cf070457b64cf93d11ad2073bff88e2",
 "assets/assets/projects/snackbar.png": "426d7d3320b4207468e1dec6322b3b08",
@@ -92,9 +98,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "23963fb3d3089936d1950f2204374127
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "137406030faed4939a57da60a883ad10",
-"/": "137406030faed4939a57da60a883ad10",
-"main.dart.js": "0e7b9aad96c856caa78462202be53b14",
+"index.html": "63ac920443a06254dfe260a0d3cd502d",
+"/": "63ac920443a06254dfe260a0d3cd502d",
+"main.dart.js": "c8055469d6b19c78229348b5b4deab41",
 "manifest.json": "d899e58ba79eeb01d040664e45f04ea5",
 "version.json": "03acefc4795e8573b194262cd3a4419f"};
 // The application shell files that are downloaded before a service worker can

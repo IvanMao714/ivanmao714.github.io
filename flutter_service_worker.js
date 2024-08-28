@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "a57a3130cfb3ebff08d3096635ad8daf",
-"assets/AssetManifest.bin.json": "a3c12134cc7ead8cff5bfe7a14ecdd02",
-"assets/AssetManifest.json": "cdd44c877198ba129126ceaed94ec371",
+const RESOURCES = {"assets/AssetManifest.bin": "55d3a09fedd5ed4f97db604febbadd9d",
+"assets/AssetManifest.bin.json": "63958bdce8cdda34eff1f8c8cfe1ddca",
+"assets/AssetManifest.json": "9f8ef625a9cd84fa828cb76a4405b6fc",
 "assets/assets/hi.gif": "cad5918d86b6a7e83f1fb4acead70e4c",
 "assets/assets/photos/black-white.png": "76ca9c4a691f5c4c34565c5ab807d51d",
 "assets/assets/photos/colored.png": "0bf08982c57c48cd24abe07988e6fb5c",
@@ -29,6 +29,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "a57a3130cfb3ebff08d3096635ad8daf
 "assets/assets/projects/quran.png": "55e8a0c928bc192f682ca0e61cb61ce3",
 "assets/assets/projects/quranB.png": "3cf070457b64cf93d11ad2073bff88e2",
 "assets/assets/projects/snackbar.png": "426d7d3320b4207468e1dec6322b3b08",
+"assets/assets/resume/YifanMao_updated_8.28.pdf": "d5a6d391129eacc851a76352458325d9",
 "assets/assets/services/app.png": "9d2da88edb7f550ef24874b306b4ae12",
 "assets/assets/services/blog.png": "5e1cbb2c67e2b8ea9ae4bcce0705d2a4",
 "assets/assets/services/fiverr.png": "9d4018924e1f0e983a86e7eaf8a0958b",
@@ -47,7 +48,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "a57a3130cfb3ebff08d3096635ad8daf
 "assets/data.json": "bc5a97f34d0314fabd35be6b30ae2dc4",
 "assets/FontManifest.json": "eb13a0d169d41e78994c5d6eb9075409",
 "assets/fonts/agustina/agustina.otf": "7b9833076716a8d14eec0cf885a3153c",
-"assets/fonts/MaterialIcons-Regular.otf": "a62e841c5bb2fa16b862bc54163267ef",
+"assets/fonts/MaterialIcons-Regular.otf": "5f1aee1e86c1ee17e0c7bf368efb4293",
 "assets/fonts/montserrat/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/fonts/poppins/Poppins-Bold.ttf": "a3e0b5f427803a187c1b62c5919196aa",
 "assets/fonts/poppins/Poppins-Italic.ttf": "5e956c44060a7b3c0e39819ae390ab15",
@@ -55,7 +56,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "a57a3130cfb3ebff08d3096635ad8daf
 "assets/fonts/poppins/Poppins-Medium.ttf": "f61a4eb27371b7453bf5b12ab3648b9e",
 "assets/fonts/poppins/Poppins-Regular.ttf": "8b6af8e5e8324edfd77af8b3b35d7f9c",
 "assets/fonts/poppins/Poppins-SemiBold.ttf": "4cdacb8f89d588d69e8570edcbe49507",
-"assets/NOTICES": "a7d34ef172772bfa911859d49c1c3bf5",
+"assets/NOTICES": "4c42fec661b53b9ea402cba61c569e1b",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "e986ebe42ef785b27164c36a9abc7818",
 "assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_AMS-Regular.ttf": "657a5353a553777e270827bd1630e467",
 "assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Caligraphic-Bold.ttf": "a9c8e437146ef63fcd6fae7cf65ca859",
@@ -98,9 +99,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "a57a3130cfb3ebff08d3096635ad8daf
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "0ff50ac2a00b035e88c15b1b7ce25dd5",
-"/": "0ff50ac2a00b035e88c15b1b7ce25dd5",
-"main.dart.js": "23f8639b371e67a217e45cf7e1460bf2",
+"index.html": "c1474688613681e9bab3bb9a90a9612d",
+"/": "c1474688613681e9bab3bb9a90a9612d",
+"main.dart.js": "11e2df5c84784aa7278a1a5f238df533",
 "manifest.json": "d899e58ba79eeb01d040664e45f04ea5",
 "version.json": "03acefc4795e8573b194262cd3a4419f"};
 // The application shell files that are downloaded before a service worker can

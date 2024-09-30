@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "55d3a09fedd5ed4f97db604febbadd9d",
-"assets/AssetManifest.bin.json": "63958bdce8cdda34eff1f8c8cfe1ddca",
-"assets/AssetManifest.json": "9f8ef625a9cd84fa828cb76a4405b6fc",
+const RESOURCES = {"assets/AssetManifest.bin": "fd059f9b0d48426e7f2720f2f0b46b1b",
+"assets/AssetManifest.bin.json": "020e4d4ddf654dea78736909338b9c73",
+"assets/AssetManifest.json": "e16d7d186625940b0483ebbabd1176a9",
 "assets/assets/hi.gif": "cad5918d86b6a7e83f1fb4acead70e4c",
 "assets/assets/photos/black-white.png": "76ca9c4a691f5c4c34565c5ab807d51d",
 "assets/assets/photos/colored.png": "0bf08982c57c48cd24abe07988e6fb5c",
@@ -29,6 +29,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "55d3a09fedd5ed4f97db604febbadd9d
 "assets/assets/projects/quran.png": "55e8a0c928bc192f682ca0e61cb61ce3",
 "assets/assets/projects/quranB.png": "3cf070457b64cf93d11ad2073bff88e2",
 "assets/assets/projects/snackbar.png": "426d7d3320b4207468e1dec6322b3b08",
+"assets/assets/resume/data.json": "f5116107b17446d3edbb66b2e0dabe38",
 "assets/assets/resume/YifanMao_updated_8.28.pdf": "d5a6d391129eacc851a76352458325d9",
 "assets/assets/services/app.png": "9d2da88edb7f550ef24874b306b4ae12",
 "assets/assets/services/blog.png": "5e1cbb2c67e2b8ea9ae4bcce0705d2a4",
@@ -48,7 +49,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "55d3a09fedd5ed4f97db604febbadd9d
 "assets/data.json": "bc5a97f34d0314fabd35be6b30ae2dc4",
 "assets/FontManifest.json": "eb13a0d169d41e78994c5d6eb9075409",
 "assets/fonts/agustina/agustina.otf": "7b9833076716a8d14eec0cf885a3153c",
-"assets/fonts/MaterialIcons-Regular.otf": "5f1aee1e86c1ee17e0c7bf368efb4293",
+"assets/fonts/MaterialIcons-Regular.otf": "a62e841c5bb2fa16b862bc54163267ef",
 "assets/fonts/montserrat/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/fonts/poppins/Poppins-Bold.ttf": "a3e0b5f427803a187c1b62c5919196aa",
 "assets/fonts/poppins/Poppins-Italic.ttf": "5e956c44060a7b3c0e39819ae390ab15",
@@ -99,9 +100,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "55d3a09fedd5ed4f97db604febbadd9d
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "a57a3c55b070587f7f6fd9daff0207eb",
-"/": "a57a3c55b070587f7f6fd9daff0207eb",
-"main.dart.js": "c4065568f1e80a9405017faac77adff8",
+"index.html": "402a5f737ede10c775fdb678c880b426",
+"/": "402a5f737ede10c775fdb678c880b426",
+"main.dart.js": "4dec462fb5ff67d83fda8df692edbbcb",
 "manifest.json": "d899e58ba79eeb01d040664e45f04ea5",
 "version.json": "03acefc4795e8573b194262cd3a4419f"};
 // The application shell files that are downloaded before a service worker can

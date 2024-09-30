@@ -1,0 +1,90 @@
+{
+    "name": "Yifan Mao",
+    "contact": {
+      "email": "ym3064@columbia.edu",
+      "github": "https://ivanmao714.github.io",
+      "linkedin": "https://linkedin.com/in/ivanmao"
+    },
+    "education": [
+      {
+        "university": "Columbia University in the City of New York",
+        "location": "New York, NY",
+        "degree": "M.S. in Computer Engineering, Columbia Engineering",
+        "date": "Expected Dec 2025",
+        "courses": "Advanced Computer Networks, Distributed Storage Systems, Internet of Things, Computer Vision"
+      },
+      {
+        "university": "Macau University of Science and Technology",
+        "location": "Macau, CN",
+        "degree": "B.S. in Software Engineering, The Faculty of Innovation Engineering, GPA: 3.8/4",
+        "date": "Aug 2024",
+        "courses": "Data Structure, Object‑oriented Programming by Java, Design and Analysis of Algorithms, Database Systems, Web Technology, Computer Organization, Computer Network, Software Engineering"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Software Data Intelligent Analysis Laboratory ‑ Macau University of Science and Technology",
+        "location": "Macau, CN",
+        "position": "Researcher",
+        "dates": "Sep 2022 ‑ Jun 2024",
+        "description": [
+          "Conducted research on enhancing code completion by integrating pointer networks with large language models, resulting in a 12% improvement in code completion accuracy.",
+          "Developed algorithms to seamlessly combine pointer networks and large language models, contributing to advancements in code completion technology.",
+          "Assisted in orchestrating and managing SANER 2023 in Macau as a Student Helper, ensuring smooth event execution and high attendee satisfaction."
+        ]
+      },
+      {
+        "company": "JD.com, Inc.",
+        "location": "Beijing, CN",
+        "position": "Backend Development Intern",
+        "dates": "Jun 2023 ‑ Sep 2023",
+        "description": [
+          "Leveraged Kafka to efficiently extract software operation data from Hive tables on the main site, and utilized Flink to compute secondary metrics, including program error rates.",
+          "Created dynamic real-time visualizations using JD.com's low code tools, enabling department leaders to analyze software operation status intuitively.",
+          "Scripted Python programs to periodically query and archive real-time data on user visits and purchases from applet Hive tables.",
+          "Designed visual charts using JD.com's low code tools, providing the sales department with clear growth trends.",
+          "Employed Kubernetes to optimize and downscale computing resources for the department's servers, resulting in significant cost savings for the company."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "MathTranslate",
+        "description": "Implementing Google Translate‑based translation of LaTeX files, ultimately translating PDFs",
+        "dates": "Mar 2023 ‑ Mar 2024",
+        "details": [
+          "Integrated Tencent Translation Engine API to deliver high‑quality translation services for users in mainland China.",
+          "Developed a feature enabling users to input an arXiv ID to retrieve the translated version of the paper.",
+          "Built a graphical interface leveraging the Kivy framework, compatible with MacOS, Ubuntu, and Windows."
+        ]
+      },
+      {
+        "name": "MUST‑Trade",
+        "description": "Second‑hand Trading Platform, Team Member, Project Owner, Course Project",
+        "dates": "Sep 2022 ‑ Nov 2022",
+        "details": [
+          "Implemented user login, product query, and other functionalities operating Springboot and MyBatis frameworks.",
+          "Visualized data such as user visits leveraging eCharts, managed permissions, and organized product listings to help administrators maintain platform operations.",
+          "Facilitated team communication and process improvement through Sprint Planning, Daily Scrum, Sprint Review (Scrum Model), and Sprint Retrospective, using Burn Down Charts to track project progress."
+        ]
+      },
+      {
+        "name": "FoodRecipe",
+        "description": "Analyzing dish ingredients based on deep learning, Deep Learning Team Member",
+        "dates": "May 2022 ‑ Jul 2022",
+        "details": [
+          "Converted videos into images operating Python scripts for model training.",
+          "Trained the ResNet 15 model to accurately identify dish ingredients with a success rate of 92%, assisting users in analyzing nutritional content.",
+          "Employed the ShuffleNet model to recognize cooking steps and integrated it into the application.",
+          "It provided users with step-by-step notifications, deployed the model on the server, and facilitated user interaction through Flask."
+        ]
+      }
+    ],
+    "skills": [
+      "Python", "C", "Java", "Dart", "HTML", "CSS", "JavaScript"
+    ],
+    "applications": [
+      "Linux(Ubuntu)", "VM", "PyCharm", "VS Code"
+    ]
+  }
+  

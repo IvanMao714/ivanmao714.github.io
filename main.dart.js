@@ -67358,7 +67358,7 @@ $S:0}
 A.t3.prototype={
 af(){return new A.JQ()}}
 A.JQ.prototype={
-G(a){return A.Hs(A.St(B.O0),B.OY,null,!1,null)}}
+G(a){return A.Hs(A.St(B.O0),B.OX,null,!1,null)}}
 A.CV.prototype={
 G(a){var s=null,r=$.nu
 r.toString
@@ -67391,7 +67391,7 @@ G(a){return A.dE(A.b([A.bc("Ivan Mao",$.ag8.oB("Agustina"),null)],t.p),B.T,B.B,B
 A.vH.prototype={
 af(){return new A.MK()}}
 A.MK.prototype={
-G(a){return A.Hs(A.St(B.NW),B.OX,null,!1,null)}}
+G(a){return A.Hs(A.St(B.NW),B.OY,null,!1,null)}}
 A.kI.prototype={
 af(){return new A.GC()}}
 A.GC.prototype={
@@ -72784,8 +72784,8 @@ B.OU=new A.J6(2,"backward")
 B.OV=new A.a7t(1,"focused")
 B.dD=new A.jz(0,0)
 B.OW=new A.jz(-2,-2)
-B.OX=new A.xV("https://ivanmao714.github.io/Notes",null)
-B.OY=new A.xV("https://ivanmao714.github.io/blog",null)
+B.OX=new A.xV("http://113.45.24.93:8080",null)
+B.OY=new A.xV("https://ivanmao714.github.io/Notes",null)
 B.dE=new A.cj(0,t.XR)
 B.OZ=new A.cj(2,t.XR)
 B.eY=new A.cj(24,t.XR)
